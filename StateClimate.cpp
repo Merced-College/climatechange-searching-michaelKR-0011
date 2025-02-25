@@ -1,5 +1,12 @@
 // StateClimate.cpp
-#include "StateClimate.h"
+//#include "StateClimate.h"
+//#include <iostream>
+//#include <fstream>
+//#include <vector>
+//#include <sstream>
+//#include <algorithm>
+
+using namespace std;
 
 // Constructor
 StateClimate::StateClimate(int f, int y, double t, double tc) : fips(f), year(y), temp(t), tempc(tc) {}
@@ -9,6 +16,12 @@ int StateClimate::getFips() const { return fips; }
 int StateClimate::getYear() const { return year; }
 double StateClimate::getTemp() const { return temp; }
 double StateClimate::getTempC() const { return tempc; }
+
+// Setter implementations
+void StateClimate::setFips(int f) { fips = f; }
+void StateClimate::setYear(int y) { year = y; }
+void StateClimate::setTemp(double t) { temp = t; }
+void StateClimate::setTempC(double tc) { tempc = tc; }
 
 // Display function
 void StateClimate::display() const {
